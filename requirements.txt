@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+sqlalchemy
+databases
+pydantic
+bcrypt
+pyjwt
+passlib[bcrypt]  # ✅ Add this for password hashing
