@@ -15,6 +15,7 @@ COPY . /app
 
 # Expose the FastAPI port
 EXPOSE 8000
+RUN pip install python-multipart
 
 # Run FastAPI with live reload
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
